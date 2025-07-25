@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url("image/feature.jpg");
+    padding: 20px;
+  }
+  
+  .features-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .features-section h2 {
+    font-size: 2.5em;
+    color: #e0e6e5;
+    margin-bottom: 40px;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.feature-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    padding: 32px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 24px;
+}
+.feature-card img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 24px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.feature-details h3 {
+    font-size: 1.5em;
+    color: #4a716a;
+    margin-bottom: 14px;
+}
+.feature-details p {
+    font-size: 1.05em;
+    color: #6b6b6b;
+    margin-bottom: 24px;
+}
+.hero-btn {
+    text-decoration: none;
+    background-color: #4a716a;
+    color: #fff;
+    padding: 12px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.1em;
+    display: inline-block;
+    margin-top: 8px;
+}
+.hero-btn:hover {
+    background-color: #37594d;
+}
+.additional-info {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    max-width: 350px;
+    background: #fff;
+    padding: 28px 24px 20px 24px;
+    text-align: center;
+    color: #333;
+    font-size: 1.05em;
+    border: 1.5px solid #4a716a;
+    border-radius: 14px;
+    z-index: 9999;
+    box-shadow: 0 8px 32px rgba(34,49,63,0.18);
+    transition: opacity 0.3s;
+}
+.close-info {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #4a716a;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1;
+}
+  
+  .feature-card.active .additional-info {
+    display: block;
+  }
+  
+  .feature-card:hover {
+    background-color: #eafaf6;
+    box-shadow: 0 12px 32px rgba(34, 49, 63, 0.18);
+    transform: translateY(-8px) scale(1.04);
+    border: 1.5px solid #4a716a;
+}
+  
+@media (max-width: 900px) {
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .feature-card {
+        width: 90vw;
+        max-width: 400px;
+        padding: 24px;
+    }
+}
+  
