@@ -11,7 +11,7 @@ Built using only **HTML**, **CSS**, and **JavaScript**, this project promotes **
 
 The goal of **Seed2Feed** is to create a simple, effective, and interactive platform where individuals can:
 
-- Donate seeds and agricultural resources
+- Donate surplus food,which is being wasted in weddings, restaurants and many more.
 - Register as a donor or volunteer
 - Earn **Green Points** for each contribution
 - Redeem points for sustainable products like compost kits, reusable bags, and organic tools
